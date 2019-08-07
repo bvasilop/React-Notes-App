@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Notes from './Notes';
 
-const NoteApp = () => {
+const NoteApp = ({ appName, subHeader, subHeader2, placeholder }) => {
 
   const notesData = JSON.parse(localStorage.getItem('notes')); // using localStorage to save data
 
@@ -30,21 +30,21 @@ const NoteApp = () => {
   return (
     <div className="ui raised very padded text container segment">
       <span className="ui center aligned icon header">
-				<i className="pencil alternate icon"></i>
-				<p>React Note App</p>
-			</span>
-			<h1 className="ui center aligned header">
-				Notes
-			</h1>
+        <i className="pencil alternate icon"></i>
+        <p>{appName}</p>
+	    </span>
+		  <h1 className="ui center aligned header">
+			{subHeader}
+		  </h1>
 			<div className="ui segment">
-			<strong>Add some notes!</strong>
-      {notes.map((note) =>(
-				<Notes key={note.title} note={note} removeNote={removeNote}/>
-      ))}
+        {notes.length === 0 && <strong>{placeholder}</strong>}
+        {notes.map((note) =>(
+				<Notes key={title} note={note} removeNote={removeNote}/>
+        ))}
 			</div>
 			<div className="ui segment">
-      <h2 className="ui center aligned header">Add note</h2>
-      <form className="ui form" onSubmit={addNote}>
+        <h2 className="ui center aligned header">{subHeader2}</h2>
+        <form className="ui form" onSubmit={addNote}>
 				<label>
 					Title
 						<input className="ui input focus" value={title} placeholder="enter title of note" onChange={(e) => setTitle(e.target.value)} />
@@ -53,11 +53,18 @@ const NoteApp = () => {
 					Body
 					<textarea className="ui fluid action input" value={body} placeholder="enter contents of note" onChange={(e) => setBody(e.target.value)} />
 				</label>
-        <button className="ui button">add note</button>
-      </form>
-			</div>
-    </div>
+          <button className="ui button">add note</button>
+        </form>
+		</div>
+  </div>
   )
+}
+
+NoteApp.defaultProps = {
+    placeholder: 'Add some notes!',
+    appName: 'React Note App',
+    subHeader: 'Notes',
+    subHeader2: 'Add Note'
 }
 
 export default NoteApp;
