@@ -1,12 +1,28 @@
 import React from 'react';
 
-const Notes = ({ note, removeNote }) => {
+const Notes = ({ error, note, removeNote }) => {
+
+
 	return (
 		<div>
-				<h2 className="item">{note.title}</h2>
+      {note.title.length === 0 &&
+      <div class="ui pointing below prompt label">
+      Please enter title  below
+      </div>
+      }
+			<h2 className="item">
+      {note.title}
+      </h2>
 		<ul>
 			<li>
-				<p>{note.body}</p>
+        {note.body.length === 0 &&
+        <div class="ui pointing below prompt label">
+        Please enter note contents below
+        </div>
+        }
+        <p>
+        {note.body}
+        </p>
 			</li>
 		</ul>
 		<button className="ui button" onClick={() => removeNote(note.title)}>remove</button>
