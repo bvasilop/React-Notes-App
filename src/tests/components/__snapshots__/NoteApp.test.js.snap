@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NoteApp correctly 1`] = `ShallowWrapper {}`;
+
+exports[`should render NoteApp correctly 2`] = `ShallowWrapper {}`;
+
+exports[`should render NoteApp correctly 3`] = `ShallowWrapper {}`;
+
+exports[`should render error for invalid submission 1`] = `ShallowWrapper {}`;
+
+exports[`should render h1 correctly 1`] = `ShallowWrapper {}`;
+
+exports[`should render h2 correctly 1`] = `ShallowWrapper {}`;
