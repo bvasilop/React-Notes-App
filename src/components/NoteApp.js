@@ -44,7 +44,6 @@ const NoteApp = ({ appName, subHeader, subHeader2, placeholder }) => {
         <form className="ui form" onSubmit={addNote}>
           <label htmlFor="Title">
             Title
-            {/* <div class="ui pointing below prompt label">Please enter your note title here</div> */}
             <input
               className="ui input focus"
               value={title}
