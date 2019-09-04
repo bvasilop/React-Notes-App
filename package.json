@@ -19,6 +19,7 @@
     "dotenv-expand": "4.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
     "eslint": "^5.14.1",
     "eslint-config-react-app": "^4.0.1",
     "eslint-loader": "2.1.2",
@@ -87,7 +88,8 @@
       "!src/**/*.d.ts"
     ],
     "setupFiles": [
-      "react-app-polyfill/jsdom"
+      "react-app-polyfill/jsdom",
+      "<rootDir>/src/tests/setupTests.js"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"

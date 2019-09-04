@@ -42,25 +42,27 @@ const NoteApp = ({ appName, subHeader, subHeader2, placeholder }) => {
       <div className="ui segment">
         <h2 className="ui center aligned header">{subHeader2}</h2>
         <form className="ui form" onSubmit={addNote}>
-          <label htmlFor="Title">
+          <label htmlFor="title">
             Title
             <input
+              id="title"
               className="ui input focus"
               value={title}
               name="title"
               type="text"
               placeholder="enter title of note"
-              onChange={e => setTitle(e.target.value.trim())}
+              onChange={e => setTitle(e.target.value)}
             />
           </label>
-          <label htmlFor="Body">
+          <label htmlFor="body">
             Body
             {/* <div class="ui pointing below prompt label">Please enter your note contents here</div> */}
             <textarea
+              id="body"
               className="ui fluid action input"
               value={body}
               placeholder="enter contents of note"
-              onChange={e => setBody(e.target.value.trim())}
+              onChange={e => setBody(e.target.value)}
             />
           </label>
           <button type="submit" className="ui button">
