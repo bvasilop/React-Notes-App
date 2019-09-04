@@ -1,13 +1,293 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render NoteApp correctly 1`] = `ShallowWrapper {}`;
+exports[`should render NoteApp correctly 1`] = `
+<div
+  className="ui raised very padded text container segment"
+>
+  <span
+    className="ui center aligned icon header"
+  >
+    <i
+      className="pencil alternate icon"
+    />
+    <p>
+      React Note App
+    </p>
+  </span>
+  <h1
+    className="ui center aligned header"
+  >
+    Notes
+  </h1>
+  <div
+    className="ui segment"
+  >
+    <strong>
+      Add some notes!
+    </strong>
+  </div>
+  <div
+    className="ui segment"
+  >
+    <h2
+      className="ui center aligned header"
+    >
+      Add Note
+    </h2>
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="Title"
+      >
+        Title
+        <input
+          className="ui input focus"
+          name="title"
+          onChange={[Function]}
+          placeholder="enter title of note"
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="Body"
+      >
+        Body
+        <textarea
+          className="ui fluid action input"
+          onChange={[Function]}
+          placeholder="enter contents of note"
+          value=""
+        />
+      </label>
+      <button
+        className="ui button"
+        type="submit"
+      >
+        add note
+      </button>
+    </form>
+  </div>
+</div>
+`;
 
-exports[`should render NoteApp correctly 2`] = `ShallowWrapper {}`;
+exports[`should render error for invalid submission 1`] = `
+<div
+  className="ui raised very padded text container segment"
+>
+  <span
+    className="ui center aligned icon header"
+  >
+    <i
+      className="pencil alternate icon"
+    />
+    <p>
+      React Note App
+    </p>
+  </span>
+  <h1
+    className="ui center aligned header"
+  >
+    Notes
+  </h1>
+  <div
+    className="ui segment"
+  >
+    <strong>
+      Add some notes!
+    </strong>
+  </div>
+  <div
+    className="ui segment"
+  >
+    <h2
+      className="ui center aligned header"
+    >
+      Add Note
+    </h2>
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="Title"
+      >
+        Title
+        <input
+          className="ui input focus"
+          name="title"
+          onChange={[Function]}
+          placeholder="enter title of note"
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="Body"
+      >
+        Body
+        <textarea
+          className="ui fluid action input"
+          onChange={[Function]}
+          placeholder="enter contents of note"
+          value=""
+        />
+      </label>
+      <button
+        className="ui button"
+        type="submit"
+      >
+        add note
+      </button>
+    </form>
+  </div>
+</div>
+`;
 
-exports[`should render NoteApp correctly 3`] = `ShallowWrapper {}`;
+exports[`should render h1 correctly 1`] = `
+<div
+  className="ui raised very padded text container segment"
+>
+  <span
+    className="ui center aligned icon header"
+  >
+    <i
+      className="pencil alternate icon"
+    />
+    <p>
+      React Note App
+    </p>
+  </span>
+  <h1
+    className="ui center aligned header"
+  >
+    Notes
+  </h1>
+  <div
+    className="ui segment"
+  >
+    <strong>
+      Add some notes!
+    </strong>
+  </div>
+  <div
+    className="ui segment"
+  >
+    <h2
+      className="ui center aligned header"
+    >
+      Add Note
+    </h2>
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="Title"
+      >
+        Title
+        <input
+          className="ui input focus"
+          name="title"
+          onChange={[Function]}
+          placeholder="enter title of note"
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="Body"
+      >
+        Body
+        <textarea
+          className="ui fluid action input"
+          onChange={[Function]}
+          placeholder="enter contents of note"
+          value=""
+        />
+      </label>
+      <button
+        className="ui button"
+        type="submit"
+      >
+        add note
+      </button>
+    </form>
+  </div>
+</div>
+`;
 
-exports[`should render error for invalid submission 1`] = `ShallowWrapper {}`;
-
-exports[`should render h1 correctly 1`] = `ShallowWrapper {}`;
-
-exports[`should render h2 correctly 1`] = `ShallowWrapper {}`;
+exports[`should render h2 correctly 1`] = `
+<div
+  className="ui raised very padded text container segment"
+>
+  <span
+    className="ui center aligned icon header"
+  >
+    <i
+      className="pencil alternate icon"
+    />
+    <p>
+      React Note App
+    </p>
+  </span>
+  <h1
+    className="ui center aligned header"
+  >
+    Notes
+  </h1>
+  <div
+    className="ui segment"
+  >
+    <strong>
+      Add some notes!
+    </strong>
+  </div>
+  <div
+    className="ui segment"
+  >
+    <h2
+      className="ui center aligned header"
+    >
+      Add Note
+    </h2>
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="Title"
+      >
+        Title
+        <input
+          className="ui input focus"
+          name="title"
+          onChange={[Function]}
+          placeholder="enter title of note"
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="Body"
+      >
+        Body
+        <textarea
+          className="ui fluid action input"
+          onChange={[Function]}
+          placeholder="enter contents of note"
+          value=""
+        />
+      </label>
+      <button
+        className="ui button"
+        type="submit"
+      >
+        add note
+      </button>
+    </form>
+  </div>
+</div>
+`;
