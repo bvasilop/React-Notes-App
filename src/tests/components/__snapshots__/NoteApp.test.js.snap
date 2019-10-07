@@ -39,12 +39,13 @@ exports[`should render NoteApp correctly 1`] = `
       onSubmit={[Function]}
     >
       <label
-        htmlFor="Title"
+        htmlFor="title"
       >
         Title
         <input
           className="ui input focus"
-          name="title"
+          id="title"
+          name="ui title"
           onChange={[Function]}
           placeholder="enter title of note"
           type="text"
@@ -52,11 +53,12 @@ exports[`should render NoteApp correctly 1`] = `
         />
       </label>
       <label
-        htmlFor="Body"
+        htmlFor="body"
       >
         Body
         <textarea
           className="ui fluid action input"
+          id="body"
           onChange={[Function]}
           placeholder="enter contents of note"
           value=""
@@ -112,12 +114,13 @@ exports[`should render error for invalid submission 1`] = `
       onSubmit={[Function]}
     >
       <label
-        htmlFor="Title"
+        htmlFor="title"
       >
         Title
         <input
           className="ui input focus"
-          name="title"
+          id="title"
+          name="ui title"
           onChange={[Function]}
           placeholder="enter title of note"
           type="text"
@@ -125,11 +128,12 @@ exports[`should render error for invalid submission 1`] = `
         />
       </label>
       <label
-        htmlFor="Body"
+        htmlFor="body"
       >
         Body
         <textarea
           className="ui fluid action input"
+          id="body"
           onChange={[Function]}
           placeholder="enter contents of note"
           value=""
@@ -185,12 +189,13 @@ exports[`should render h1 correctly 1`] = `
       onSubmit={[Function]}
     >
       <label
-        htmlFor="Title"
+        htmlFor="title"
       >
         Title
         <input
           className="ui input focus"
-          name="title"
+          id="title"
+          name="ui title"
           onChange={[Function]}
           placeholder="enter title of note"
           type="text"
@@ -198,11 +203,12 @@ exports[`should render h1 correctly 1`] = `
         />
       </label>
       <label
-        htmlFor="Body"
+        htmlFor="body"
       >
         Body
         <textarea
           className="ui fluid action input"
+          id="body"
           onChange={[Function]}
           placeholder="enter contents of note"
           value=""
@@ -258,12 +264,13 @@ exports[`should render h2 correctly 1`] = `
       onSubmit={[Function]}
     >
       <label
-        htmlFor="Title"
+        htmlFor="title"
       >
         Title
         <input
           className="ui input focus"
-          name="title"
+          id="title"
+          name="ui title"
           onChange={[Function]}
           placeholder="enter title of note"
           type="text"
@@ -271,11 +278,12 @@ exports[`should render h2 correctly 1`] = `
         />
       </label>
       <label
-        htmlFor="Body"
+        htmlFor="body"
       >
         Body
         <textarea
           className="ui fluid action input"
+          id="body"
           onChange={[Function]}
           placeholder="enter contents of note"
           value=""
