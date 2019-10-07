@@ -2,6 +2,12 @@
 
 exports[`renders without crashing 1`] = `
 <div>
+  <div
+    className="navbar"
+  >
+    <DarkModeToggle />
+  </div>
+  <Content />
   <NoteApp
     appName="React Note App"
     placeholder="Add some notes!"

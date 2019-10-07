@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import '../setupTests';
-import NoteApp from '../../components/NoteApp';
+import NoteApp from '../../NoteApp';
 
 test('should render NoteApp correctly', () => {
   const wrapper = shallow(<NoteApp />);

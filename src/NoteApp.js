@@ -30,9 +30,9 @@ const NoteApp = ({ appName, subHeader, subHeader2, placeholder }) => {
     <div className="ui raised very padded text container segment">
       <span className="ui center aligned icon header">
         <i className="pencil alternate icon"></i>
-        <p>{appName}</p>
+        <h1>{appName}</h1>
       </span>
-      <h1 className="ui center aligned header">{subHeader}</h1>
+      <h2 className="ui center aligned header">{subHeader}</h2>
       <div className="ui segment">
         {notes.length === 0 && <strong>{placeholder}</strong>}
         {notes.map(note => (
@@ -48,7 +48,7 @@ const NoteApp = ({ appName, subHeader, subHeader2, placeholder }) => {
               id="title"
               className="ui input focus"
               value={title}
-              name="title"
+              name="ui title"
               type="text"
               placeholder="enter title of note"
               onChange={e => setTitle(e.target.value)}
@@ -56,7 +56,6 @@ const NoteApp = ({ appName, subHeader, subHeader2, placeholder }) => {
           </label>
           <label htmlFor="body">
             Body
-            {/* <div class="ui pointing below prompt label">Please enter your note contents here</div> */}
             <textarea
               id="body"
               className="ui fluid action input"
