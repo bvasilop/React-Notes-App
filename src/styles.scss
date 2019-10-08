@@ -41,7 +41,7 @@ body.dark-mode {
     box-shadow: 0 2px 4px 0 rgb(223, 223, 223),
       0 2px 10px 0 rgba(34, 36, 38, 0.15);
   }
-  .ui.icon.header .icon,
+  // .ui.icon.header .icon,
   .ui.center.aligned.header,
   p {
     color: #dfdfdf !important;
@@ -56,6 +56,9 @@ body.dark-mode {
   p {
     font-size: 1.5rem;
   }
+}
+.ui[class*='very padded'].segment {
+  padding: 1.25rem;
 }
 
 .navbar {
@@ -174,5 +177,51 @@ input[type='checkbox'].dmcheck {
     background: #fff;
     opacity: 0.9;
     background-color: #f6f6f6 !important;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 411px) {
+  .content p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  .content h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0.1rem;
+  }
+  p {
+    margin: 0;
+  }
+  body.dark-mode p {
+    font-size: 1.2rem;
+  }
+  .ui.padded.segment {
+    padding: 0;
+  }
+  .ui.container {
+    width: auto !important;
+    margin-left: 0.3em !important;
+    margin-right: 0.3em !important;
+  }
+  .ui.icon.header .icon {
+    font-size: 3rem;
+    padding-top: 0.25rem;
+  }
+  .ui.form {
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .ui.header {
+    margin: 0;
+  }
+
+  h1:last-child {
+    display: none;
+  }
+  .content p:nth-child(3) {
+    display: none;
   }
 }
