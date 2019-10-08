@@ -7,9 +7,11 @@ const Content = () => (
     <h1>Note app with Light and Dark Mode</h1>
     <p>
       This is an example of a <code>Note Application</code> that allows users to
-      switch between <code>Light Mode</code> and <code>Dark mode</code>. It
-      persists across sessions (i.e., uses <code>localStorage</code>) and shares
-      state across instances and even tabs and/or browser windows.
+      switch between <code>Light Mode</code> and <code>Dark mode</code>.
+    </p>
+    <p>
+      It persists across sessions (i.e., uses <code>localStorage</code>) and
+      shares state across instances and even tabs and/or browser windows.
     </p>
 
     <p>
