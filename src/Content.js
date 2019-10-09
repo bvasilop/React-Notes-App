@@ -4,10 +4,11 @@ import DarkModeCommands from './DarkModeCommands';
 
 const Content = () => (
   <div className="content">
-    <h1>Note app with Light and Dark Mode</h1>
+    <h1>Note App with Light and Dark Mode</h1>
     <p>
-      This is an example of a <code>Note Application</code> that allows users to
-      switch between <code>Light Mode</code> and <code>Dark mode</code>.
+      This is an example of a <code>React Note Application</code> that allows
+      users to switch between <code>Light Mode</code> and <code>Dark mode</code>
+      .
     </p>
     <p>
       It persists across sessions (i.e., uses <code>localStorage</code>) and
